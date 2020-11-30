@@ -149,7 +149,7 @@ section{
 .about .title , .skills .title, .contact .title{
     text-align: center;
     font-size: 40px;
-    margin-bottom: 110px;
+    margin-bottom: 100px;
     padding-bottom: 20px;
     
 }
@@ -340,7 +340,7 @@ margin:10px 0;
 	}
 	.about .about-content .left img{
 		height: 30%;
-		width: 350px;
+		
 	
 	}
 	
@@ -435,6 +435,15 @@ margin:10px 0;
 	.about .about-content .right p{
 		
 		font-size:15px;
+	}
+	.about .about-content .left img{
+		height: 200px;
+		width: 200px;
+		object-fit: cover;
+		border-radius: 6px;
+	}
+	.about .title{
+		margin-bottom: 50px;
 	}
 
 	
