@@ -328,6 +328,7 @@ padding:0px;
 .contact{
 	background: black;
 	color: white;
+	height: 100%;
 }
 .contact .contact-content .column{
 	width:calc(50% - 30px);
@@ -565,7 +566,7 @@ margin:10px 0;
 	}
 	
 	.about .about-content .right p{
-		
+		margin-bottom: 73px;
 		font-size:15px;
 	}
 	.about .about-content .left img{
@@ -617,11 +618,8 @@ margin:10px 0;
 		     margin: 0px;
 	}
 	.contact .right form .email {
-		margin-left: 0px;
-	}
-		
-
-	
-} 
+    margin-left: 0px;
+}
 
 
+}
