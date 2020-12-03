@@ -360,6 +360,7 @@ margin:10px 0;
 }
 .contact .right form .fields{
 	display: flex;
+	
 }
 .contact .right form .name{
 	margin-right: 10px;
@@ -611,7 +612,13 @@ margin:10px 0;
 		padding: 0 10px;
 		
 	}
-
+	.contact .right form .fields {
+		flex-direction: column;
+		     margin: 0px;
+	}
+	.contact .right form .email {
+		margin-left: 0px;
+	}
 		
 
 	
