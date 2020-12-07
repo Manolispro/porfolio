@@ -167,7 +167,6 @@ section{
 .contact .contact-content{
 	display:flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
 }
 .about .about-content .left{
@@ -221,7 +220,7 @@ section{
     grid-auto-rows: auto;
     gap: 20px;
     font-family: sans-serif;
-    padding-top: 30px;
+	padding: 0 15px;
 }
 .project .max-width{
 	position: relative;
@@ -230,7 +229,7 @@ section{
 .project  >h2{
     font-size: 40px; 
     text-align: center;
-	padding:24px;
+	padding:0 0 24px;
 	margin: 0 0 100px;
 	color:white;
 
@@ -276,7 +275,11 @@ section{
 @media screen and (max-width: 400px){
     .project .cards{
         grid-template-columns:1fr;
-    }
+	}
+	.project >h2{
+		padding: 0 0 20px;
+		margin: 0 0 20px;
+	}
 }
 
 
@@ -289,11 +292,12 @@ section{
 .skill{
 	position: relative;
 	top:17%;
+	padding:0px;
 }
 .skills >h2{
     font-size: 40px; 
     text-align: center;
-	padding: 0 24px 24px 24px;
+	padding: 0 0 24px;
 	margin: 0 0 100px;
 
 }
@@ -321,13 +325,18 @@ section .skill{
 }
 @media screen and (max-width: 600px){
     .skill{
-        grid-template-columns:1fr;
-    }
+		grid-template-columns:1fr;
+		
+	}
+	.skills >h2{
+		padding: 0 0 20px;
+		margin: 0 0 20px;
+	}
 }
 
 .skill .set{
     background-color: white;
-    padding:24px;
+    /* padding:24px; */
     border-radius: 16px;
 }
 .skill .set:hover{
@@ -552,6 +561,11 @@ margin:10px 0;
 		grid-template-columns: repeat(2,1fr);
 		grid-gap: 0;
 	}
+	.contact .contact-content .column {
+		width: 86%;
+		margin-bottom: 0px; 
+		margin-left: 0px;
+	}
 }
 
 @media(max-width: 580px) {
@@ -576,9 +590,13 @@ margin:10px 0;
 		border-radius: 4px;
 	}
 	.contact .title {
-		width: 100%;
-		margin-bottom: 35px;
-		margin-left: 0px;
+		/* width: 100%; */
+		/* margin-bottom: 35px;
+		margin-left: 0px; */
+	}
+	.contact .column.right{
+		width: 90%;
+		padding: 0 15px;
 	}
 	.contact .right form .button{
 		height:45px;
