@@ -210,7 +210,9 @@ section{
 	background:none;
 }
 /* project section  */
-
+ .project{
+	background-color: black;
+}
 .cards {
     margin: 0 auto;
     max-width: 1024px;
@@ -230,6 +232,7 @@ section{
     text-align: center;
 	padding:24px;
 	margin: 0 0 100px;
+	color:white;
 
 }
 
