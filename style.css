@@ -8,6 +8,9 @@
 	text-decoration: none;
 	
 }
+html{
+	scroll-behavior: smooth;
+}
 a { color: inherit; } 
 .max-width {
 	max-width: 1500px;
@@ -43,8 +46,12 @@ a { color: inherit; }
 	align-items: center;
 	justify-content: space-between;
 }
-
-.navbar .menu li {
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a{
+	display: block;
 	color: white;
 	display: inline-block;
 	margin-left: 15px;
@@ -89,7 +96,7 @@ a { color: inherit; }
 	background-color: black;
 	height: 100vh;
 	color: white;
-	/* min-height: 500px; */
+	min-height: 500px;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -145,7 +152,7 @@ section{
 /* about section */
 .about ,  .contact, .skills , .project{
 	font-family: 'Roboto Slab', serif;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .about .title , .skills .title, .contact .title ,.project .title{
@@ -221,6 +228,9 @@ text-align: center;
 
 
 /* skills */
+.skills{
+	align-items: center;
+}
 .skill{
 	position: relative;
 	top:17%;
@@ -228,8 +238,13 @@ text-align: center;
 .skills >h2{
     font-size: 40px; 
     text-align: center;
-    padding:24px;
+	padding: 0 24px 24px 24px;
+	margin: 0 0 100px;
 
+}
+label .skill-text{
+	
+	font-size:20px;
 }
 section .skill{
     display: grid;
@@ -237,6 +252,9 @@ section .skill{
     padding:16px;
     max-width: 1024px;
     margin:0 auto;
+}
+.set .list{
+	align-items: center;
 }
 .skill .set .list .icon{
 	font-size: 35px;
@@ -291,7 +309,7 @@ section .skill{
 .contact{
 	background: black;
 	color: white;
-	height: 100vh;
+	min-height: 100vh;
 }
 .contact .contact-content .column{
 	width:calc(50% - 30px);
@@ -405,7 +423,7 @@ margin:10px 0;
 }
 .about, .contact, .skills, .project {
 		font-family: 'Roboto Slab', serif;
-		height: 100vh;
+		
 }	
 }
 
@@ -553,7 +571,7 @@ margin:10px 0;
 }
 .home .home-content .text-3 {
 		font-size: 20px;
-		color:purple;
+		
 }
 .home .home-content a,
 .about .about-content .right a,
