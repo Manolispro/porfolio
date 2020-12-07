@@ -221,46 +221,71 @@ text-align: center;
 
 
 /* skills */
-.skills{
-	background-color: white;
-	color:black;
-	 font-family: 'Roboto Slab', serif;
-	 height:100vh;
+.skill{
+	position: relative;
+	top:17%;
 }
-.skills .skills-content .card{
-	width:calc(33% - 20px);
-	background:rgb(87, 84, 84);
-	text-align: center;
-	border-radius: 6px;
-	padding:20px 25px;
-	margin: 10px;
+.skills >h2{
+    font-size: 40px; 
+    text-align: center;
+    padding:24px;
+
+}
+section .skill{
+    display: grid;
+    grid-gap: 16px;
+    padding:16px;
+    max-width: 1024px;
+    margin:0 auto;
+}
+.skill .set .list .icon{
+	font-size: 35px;
+}
+@media screen and (min-width: 700px){
+    .skill{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .skill{
+        grid-template-columns:1fr;
+    }
+}
+
+.skill .set{
+    background-color: white;
+    padding:24px;
+    border-radius: 16px;
+}
+.skill .set:hover{
+	box-shadow:0px 20px 20px #0f0f0f24;
 	
-	transition: all 0.5s ease;
 }
-.skills .skills-content .card .box{
-	transition: all 0.5s ease;
+.set span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    margin: 0 auto;
+    background-color: #c28285;
+    border-radius: 24%;
+    color: white;
 }
-.skills .skills-content .card:hover{
-	background:#c28285;
+.set > header {
+    padding: 24px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
 }
-.skills .skills-content .card:hover .box{
-	transform: scale(1.05);
-}
-.skills .skills-content .card i{
-	font-size:100px;
-	color:#c28285;
-	transition: color 0.5s ease;
-}
-.skills .skills-content .card:hover i{
-	color:white;
-}
-.skills .skills-content .card .text{
-	font-size:25px;
-	font-weight: 500;
-	/* margin:10px 0 7px 0; */
+.set .list{
+    padding:8px;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    text-transform: uppercase;
 
 }
-
 
 /* contact */
 .contact{
