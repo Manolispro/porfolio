@@ -236,7 +236,11 @@ section{
 }
 
 
+.project .card{
+	display: flex;
+    flex-direction: column;
 
+}
 .card__image {
     width: 100%;
     height: 150px;
@@ -250,7 +254,7 @@ section{
     font-size: 0.9em;
     padding: 15px;
     background: #fafafa;
-    
+    flex-grow: 1;
 }
 
 .card__info {
@@ -267,12 +271,12 @@ section{
 .card__link:hover {
     text-decoration: underline;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
     .project .cards{
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .project .cards{
         grid-template-columns:1fr;
 	}
